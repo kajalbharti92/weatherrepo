@@ -7,7 +7,7 @@ app=Flask(__name__)
 def homepage():
     return render_template("index.html")
 
-@app.route("/weatherapp",methods=['POST','GET'])
+@app.route("/weatherapp",methods=['POST',"GET"])
 def get_weatherdata():
     url="https://api.openweathermap.org/data/2.5/weather"
     param={
